@@ -1,34 +1,18 @@
 import { motion } from 'framer-motion'
-import { Avatar } from 'antd'
-import { FaQuoteLeft, FaStar } from 'react-icons/fa'
+import { FiArrowRight } from 'react-icons/fi'
 
-const items = [
-  {
-    name: 'Dra. Helena Cardoso',
-    role: 'Clínica CorVivo · Cardiologia',
-    quote:
-      'Em 90 dias triplicamos o número de consultas particulares. A ProClinic entendeu o nosso público melhor do que a gente — e o time é craque em tráfego.',
-    initials: 'HC',
-  },
-  {
-    name: 'Dr. Rafael Mendes',
-    role: 'Instituto Vita · Multiespecialidades',
-    quote:
-      'Já tínhamos tentado três agências antes. A ProClinic foi a primeira a olhar agenda, atendimento e marketing juntos — o faturamento subiu 62% no semestre.',
-    initials: 'RM',
-  },
-  {
-    name: 'Juliana Tavares',
-    role: 'Rede Pediatra Mais · 9 unidades',
-    quote:
-      'O diagnóstico inicial sozinho já valeu o investimento. Em quatro meses padronizamos a captação nas 9 unidades e reduzimos o CPL em 58%.',
-    initials: 'JT',
-  },
+const rows = [
+  { antes: 'Agenda imprevisível', depois: 'Agenda previsível e controlada' },
+  { antes: 'Depende de indicação passiva', depois: 'Captação ativa estruturada' },
+  { antes: 'Lead sem resposta rápida', depois: 'IA responde em segundos, 24h' },
+  { antes: 'Sem métrica, sem controle', depois: 'Decisões baseadas em dados' },
+  { antes: 'Paciente some, não volta', depois: 'Follow-up automatizado, LTV crescendo' },
+  { antes: 'Trabalha muito, ganha pouco', depois: 'Receita previsível. Esforço com retorno.' },
 ]
 
 export default function Testimonials() {
   return (
-    <section id="cases" className="relative py-24 md:py-32">
+    <section id="resultados" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -38,52 +22,69 @@ export default function Testimonials() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-300">
-            Cases de quem confiou
+            Resultados · O que muda para o cliente
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Clínicas que faturaram mais com a ProClinic
+            Antes e depois.
           </h2>
+          <p className="mt-4 text-base text-white/65 md:text-lg">
+            O que a estrutura comercial muda na prática. Resultados individuais
+            variam conforme a fase da clínica, o mercado e o nível de
+            implementação.
+          </p>
         </motion.div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-3">
-          {items.map((t, i) => (
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.6 }}
+          className="mt-14 grid gap-3 lg:grid-cols-2"
+        >
+          {rows.map((r, i) => (
             <motion.div
-              key={t.name}
-              initial={{ opacity: 0, y: 28 }}
+              key={r.antes}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.55, delay: i * 0.08 }}
-              whileHover={{ y: -4 }}
-              className="glass relative rounded-3xl p-7"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
+              className="glass flex flex-col gap-3 rounded-2xl p-5 md:flex-row md:items-center md:gap-5"
             >
-              <FaQuoteLeft className="text-2xl text-brand-300/70" />
-              <p className="mt-4 text-[15px] leading-relaxed text-white/85">
-                {t.quote}
-              </p>
-              <div className="mt-6 flex items-center gap-3">
-                <Avatar
-                  size={42}
-                  style={{
-                    background:
-                      'linear-gradient(135deg,#1f8dff,#0563c2)',
-                    fontWeight: 600,
-                  }}
-                >
-                  {t.initials}
-                </Avatar>
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-white">{t.name}</p>
-                  <p className="text-xs text-white/55">{t.role}</p>
-                </div>
-                <div className="flex gap-0.5 text-amber-300">
-                  {Array.from({ length: 5 }).map((_, k) => (
-                    <FaStar key={k} size={12} />
-                  ))}
-                </div>
+              <div className="flex-1">
+                <p className="text-[11px] uppercase tracking-widest text-white/40">
+                  Antes
+                </p>
+                <p className="mt-1 text-[15px] text-white/70">{r.antes}</p>
+              </div>
+              <FiArrowRight className="hidden flex-none text-brand-300 md:block" size={20} />
+              <div className="flex-1">
+                <p className="text-[11px] uppercase tracking-widest text-mint-300">
+                  Com o ProClinic
+                </p>
+                <p className="mt-1 text-[15px] font-medium text-white">
+                  {r.depois}
+                </p>
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.6 }}
+          className="glass-soft mt-12 rounded-3xl p-6 text-center text-sm leading-relaxed text-white/75 md:p-8"
+        >
+          <p>
+            <span className="font-semibold text-white">Como é a operação na prática:</span>{' '}
+            cada cliente ProClinic passa por um diagnóstico de fase antes de
+            qualquer implementação. A partir desse diagnóstico, definimos as
+            prioridades e o cronograma de execução. O acompanhamento é contínuo
+            — reuniões semanais, revisão de métricas e ajuste de rota sempre
+            que necessário.
+          </p>
+        </motion.div>
       </div>
     </section>
   )

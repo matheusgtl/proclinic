@@ -1,25 +1,24 @@
 import { motion } from 'framer-motion'
 import { Button } from 'antd'
-import {
-  FiArrowRight,
-  FiCheck,
-  FiClipboard,
-  FiPieChart,
-  FiFileText,
-} from 'react-icons/fi'
+import { FiArrowRight, FiCheck, FiSlash } from 'react-icons/fi'
 
-const includes = [
-  'Análise da agenda, do ticket médio e do funil atual',
-  'Auditoria das campanhas e canais que já estão rodando',
-  'Estudo da concorrência e do posicionamento da marca',
-  'Mapeamento das oportunidades de captação, conversão e retorno',
-  'Proposta sob medida com canais, metas e investimento',
+const included = [
+  'Diagnóstico comercial completo da clínica ou consultório',
+  'Definição de posicionamento e paciente ideal',
+  'Plano de captação (orgânico + pago, conforme o perfil)',
+  'Produção de conteúdo para redes sociais — calendário e execução',
+  'Implementação do assistente de agendamento com IA (WhatsApp)',
+  'Configuração e operação do CRM',
+  'Fluxos de follow-up e reativação automatizados',
+  'Definição e acompanhamento de métricas-chave',
+  'Reuniões semanais de acompanhamento e revisão',
+  'Treinamento da equipe de recepção e atendimento',
 ]
 
-const steps = [
-  { icon: FiClipboard, title: 'Reunião de descoberta', detail: '45 min com um especialista' },
-  { icon: FiPieChart, title: 'Análise dos seus dados', detail: 'Auditoria técnica em até 5 dias úteis' },
-  { icon: FiFileText, title: 'Entrega do diagnóstico', detail: 'Apresentação + plano personalizado' },
+const notDo = [
+  'Não entregamos relatórios para você implementar sozinho',
+  'Não gerenciamos só redes sociais',
+  'Não fazemos tráfego pago avulso',
 ]
 
 export default function Pricing() {
@@ -34,19 +33,18 @@ export default function Pricing() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-300">
-            Plano sob medida
+            O que está incluso
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Cada clínica é única. Seu plano também.
+            O que a estrutura ProClinic entrega.
           </h2>
           <p className="mt-4 text-base text-white/65 md:text-lg">
-            Não vendemos pacotes engessados. Tudo começa por um diagnóstico
-            gratuito que define o escopo, o investimento e as metas certas para
-            o seu momento.
+            Implementação, não consultoria. Trabalhamos com você, dentro da sua
+            operação — não entregamos um plano para você executar sozinho.
           </p>
         </motion.div>
 
-        <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,21 +59,20 @@ export default function Pricing() {
                 boxShadow: '0 8px 20px -6px rgba(31,141,255,0.55)',
               }}
             >
-              Gratuito · sem compromisso
+              Operação comercial completa
             </span>
 
-            <p className="text-sm font-medium text-white/85">Diagnóstico ProClinic</p>
-            <h3 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              O ponto de partida para uma clínica que cresce com previsibilidade.
+            <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
+              5 frentes integradas, implementadas ao lado da sua equipe.
             </h3>
             <p className="mt-4 text-sm text-white/65">
-              Em uma única jornada, mostramos onde sua clínica está perdendo
-              dinheiro e o caminho mais curto para reverter isso.
+              Posicionamento, captação, atendimento com IA, CRM e métricas —
+              juntos. Funciona integrado ou não funciona.
             </p>
 
-            <ul className="mt-7 space-y-3">
-              {includes.map((i) => (
-                <li key={i} className="flex items-start gap-3 text-sm text-white/85">
+            <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+              {included.map((i) => (
+                <li key={i} className="flex items-start gap-2.5 text-sm text-white/85">
                   <span
                     className="mt-0.5 grid h-5 w-5 flex-none place-items-center rounded-full text-[10px] text-white"
                     style={{
@@ -88,6 +85,42 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex flex-col gap-5"
+          >
+            <div className="glass flex flex-col rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-widest text-mint-300">
+                Como é a operação
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-white/80">
+                Cada cliente passa por um diagnóstico de fase antes de qualquer
+                implementação. A partir dele, definimos prioridades e
+                cronograma. O acompanhamento é contínuo — reuniões semanais,
+                revisão de métricas e ajuste de rota sempre que necessário.
+              </p>
+            </div>
+
+            <div className="glass rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-widest text-white/45">
+                O que não fazemos
+              </p>
+              <ul className="mt-4 space-y-3">
+                {notDo.map((n) => (
+                  <li key={n} className="flex items-start gap-2.5 text-sm text-white/65">
+                    <span className="mt-0.5 grid h-5 w-5 flex-none place-items-center rounded-full bg-white/10 text-[10px] text-white/70">
+                      <FiSlash size={11} />
+                    </span>
+                    <span>{n}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <Button
               size="large"
@@ -95,7 +128,7 @@ export default function Pricing() {
               type="primary"
               icon={<FiArrowRight />}
               iconPosition="end"
-              className="shine mt-8 self-start"
+              className="shine self-start"
               style={{
                 height: 52,
                 paddingInline: 26,
@@ -106,44 +139,8 @@ export default function Pricing() {
                 boxShadow: '0 16px 40px -12px rgba(31,141,255,0.55)',
               }}
             >
-              Peça o Diagnóstico
+              Quero fazer o diagnóstico
             </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col gap-4"
-          >
-            {steps.map((s, i) => (
-              <div
-                key={s.title}
-                className="glass flex items-center gap-4 rounded-3xl p-5"
-              >
-                <div
-                  className="grid h-12 w-12 flex-none place-items-center rounded-2xl text-white"
-                  style={{ background: 'linear-gradient(135deg,#1f8dff,#0563c2)' }}
-                >
-                  <s.icon size={20} />
-                </div>
-                <div className="flex-1">
-                  <p className="text-[11px] uppercase tracking-widest text-white/45">
-                    Etapa {String(i + 1).padStart(2, '0')}
-                  </p>
-                  <p className="text-base font-semibold text-white">{s.title}</p>
-                  <p className="text-xs text-white/60">{s.detail}</p>
-                </div>
-              </div>
-            ))}
-
-            <div className="glass-soft rounded-3xl p-5 text-sm leading-relaxed text-white/70">
-              Depois do diagnóstico, você recebe uma proposta personalizada com
-              os canais, o investimento mensal e as metas que fazem sentido
-              para a sua clínica. <span className="font-medium text-white">
-              Sem fidelidade, sem letras miúdas.</span>
-            </div>
           </motion.div>
         </div>
       </div>

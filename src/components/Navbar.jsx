@@ -4,10 +4,11 @@ import { FiMenu } from 'react-icons/fi'
 import { useState } from 'react'
 
 const links = [
-  { label: 'Soluções', href: '#features' },
-  { label: 'Método', href: '#how' },
-  { label: 'Resultados', href: '#cases' },
-  { label: 'Diagnóstico', href: '#diagnostico' },
+  { label: 'Problema', href: '#problema' },
+  { label: 'Como funciona', href: '#features' },
+  { label: 'Para quem é', href: '#para-quem-e' },
+  { label: 'Resultados', href: '#resultados' },
+  { label: 'Sobre', href: '#sobre' },
   { label: 'Contato', href: '#contact' },
 ]
 
@@ -60,7 +61,7 @@ export default function Navbar() {
               fontWeight: 500,
             }}
           >
-            Peça o Diagnóstico
+            Quero fazer o diagnóstico
           </Button>
         </div>
 

@@ -1,17 +1,31 @@
-import { FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp } from 'react-icons/fa'
+const INSTAGRAM_URL = 'https://www.instagram.com/proclinic_oficial/'
 
 const cols = [
   {
-    title: 'Soluções',
-    items: ['Captação', 'Conversão', 'Retorno', 'Branding'],
+    title: 'Navegar',
+    items: [
+      { label: 'Problema', href: '#problema' },
+      { label: 'Como funciona', href: '#features' },
+      { label: 'Para quem é', href: '#para-quem-e' },
+      { label: 'Resultados', href: '#resultados' },
+    ],
   },
   {
-    title: 'Agência',
-    items: ['Sobre nós', 'Método', 'Cases', 'Carreiras'],
+    title: 'ProClinic',
+    items: [
+      { label: 'Sobre', href: '#sobre' },
+      { label: 'Fundador', href: '#sobre' },
+      { label: 'Missão', href: '#sobre' },
+      { label: 'Diagnóstico', href: '#contact' },
+    ],
   },
   {
-    title: 'Conteúdo',
-    items: ['Blog', 'Instagram', 'YouTube', 'Diagnóstico gratuito'],
+    title: 'Contato',
+    items: [
+      { label: 'WhatsApp', href: '#contact' },
+      { label: 'Instagram · @proclinic_oficial', href: INSTAGRAM_URL, external: true },
+      { label: 'Política de Privacidade', href: '#' },
+    ],
   },
 ]
 
@@ -33,22 +47,10 @@ export default function Footer() {
                 </span>
               </div>
               <p className="mt-4 max-w-sm text-sm text-white/60">
-                A agência de marketing especializada em clínicas. Implantamos
-                um sistema de captação, conversão e retorno de pacientes que
-                faz a sua clínica faturar mais.
+                Estrutura comercial completa para médicos e dentistas.
+                Implementação, não consultoria. Receita previsível com método,
+                IA, CRM e métricas — implementadas ao lado da sua equipe.
               </p>
-              <div className="mt-5 flex gap-3 text-white/70">
-                {[FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="grid h-10 w-10 place-items-center rounded-xl glass-soft transition hover:text-white"
-                    aria-label="social"
-                  >
-                    <Icon size={16} />
-                  </a>
-                ))}
-              </div>
             </div>
 
             {cols.map((c) => (
@@ -56,12 +58,14 @@ export default function Footer() {
                 <p className="text-sm font-semibold text-white">{c.title}</p>
                 <ul className="mt-4 space-y-2">
                   {c.items.map((i) => (
-                    <li key={i}>
+                    <li key={i.label}>
                       <a
-                        href="#"
+                        href={i.href}
+                        target={i.external ? '_blank' : undefined}
+                        rel={i.external ? 'noreferrer noopener' : undefined}
                         className="text-sm text-white/60 transition hover:text-white"
                       >
-                        {i}
+                        {i.label}
                       </a>
                     </li>
                   ))}
@@ -71,8 +75,8 @@ export default function Footer() {
           </div>
 
           <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row">
-            <p>© 2026 ProClinic · Agência de marketing para clínicas · CNPJ 00.000.000/0001-00</p>
-            <p>Feito com carinho em São Paulo, Brasil.</p>
+            <p>© 2025 ProClinic · Estrutura Comercial Completa para Médicos e Dentistas</p>
+            <p>Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

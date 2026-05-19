@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
 const stats = [
-  { value: '180+', label: 'clínicas atendidas no Brasil' },
-  { value: '6x', label: 'ROI médio em 90 dias' },
-  { value: '+47%', label: 'aumento médio de faturamento' },
-  { value: '−58%', label: 'redução média do custo por lead' },
+  { value: '+200', label: 'negócios impactados' },
+  { value: '10M+', label: 'visualizações mensais nos canais do fundador' },
+  { value: '25+', label: 'anos em marketing e operações comerciais' },
+  { value: '5', label: 'frentes de implementação integradas' },
 ]
 
 export default function Stats() {
@@ -28,7 +28,7 @@ export default function Stats() {
               className="text-center"
             >
               <p
-                className="bg-clip-text text-3xl font-semibold tracking-tight text-transparent md:text-4xl"
+                className="bg-clip-text text-3xl font-semibold tracking-tight text-transparent md:text-5xl"
                 style={{
                   backgroundImage:
                     'linear-gradient(120deg,#6fe7d1,#4ea7ff,#1f8dff)',

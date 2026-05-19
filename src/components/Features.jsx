@@ -1,49 +1,47 @@
 import { motion } from 'framer-motion'
 import {
+  FiCompass,
   FiTarget,
-  FiTrendingUp,
+  FiMessageSquare,
   FiRepeat,
-  FiCamera,
-  FiSearch,
-  FiAward,
+  FiBarChart2,
 } from 'react-icons/fi'
 
-const features = [
+const pillars = [
   {
+    n: '01',
+    icon: FiCompass,
+    title: 'Posicionamento e diferenciação',
+    desc: 'Definimos quem é o seu paciente ideal, o que te diferencia de outros profissionais da mesma área e como comunicar isso com clareza. Sem posicionamento, todo o restante fica mais caro e menos eficiente.',
+    grad: 'linear-gradient(135deg,#0a2547,#0563c2)',
+  },
+  {
+    n: '02',
     icon: FiTarget,
-    title: 'Captação de pacientes',
-    desc: 'Tráfego pago em Meta e Google com criativos validados por especialidade — leads qualificados chegando na sua agenda todos os dias.',
+    title: 'Captação e tráfego',
+    desc: 'Estruturamos os canais de aquisição — orgânico e pago — para atrair o paciente certo, no momento certo, com a mensagem certa. Instagram, Google, indicação estruturada e outros canais conforme o perfil da clínica.',
     grad: 'linear-gradient(135deg,#1f8dff,#0563c2)',
   },
   {
-    icon: FiTrendingUp,
-    title: 'Conversão de leads',
-    desc: 'Funil completo, script de atendimento, automações de WhatsApp e CRM para transformar contato em consulta marcada.',
-    grad: 'linear-gradient(135deg,#43d3b8,#1fb89a)',
-  },
-  {
-    icon: FiRepeat,
-    title: 'Retorno de pacientes',
-    desc: 'Réguas de relacionamento, campanhas de reativação e fidelização para fazer o paciente voltar — e indicar.',
+    n: '03',
+    icon: FiMessageSquare,
+    title: 'Atendimento e conversão com IA',
+    desc: 'Implementamos o assistente de agendamento com inteligência artificial integrado ao WhatsApp e ao CRM. O lead nunca fica sem resposta. O agendamento acontece mesmo fora do horário comercial.',
     grad: 'linear-gradient(135deg,#4ea7ff,#1f8dff)',
   },
   {
-    icon: FiCamera,
-    title: 'Conteúdo e redes sociais',
-    desc: 'Produção mensal de fotos, vídeos e roteiros que posicionam a clínica como autoridade na especialidade.',
+    n: '04',
+    icon: FiRepeat,
+    title: 'CRM, follow-up e recorrência',
+    desc: 'Cada paciente tem um caminho mapeado no CRM — do primeiro contato à manutenção. O follow-up é automatizado. O retorno é previsível. O LTV aumenta sem esforço manual da equipe.',
+    grad: 'linear-gradient(135deg,#43d3b8,#1fb89a)',
+  },
+  {
+    n: '05',
+    icon: FiBarChart2,
+    title: 'Métricas e receita previsível',
+    desc: 'Implementamos os indicadores que importam: custo de aquisição, taxa de conversão, ticket médio, taxa de retorno. Você passa a tomar decisões com base em número, não em intuição.',
     grad: 'linear-gradient(135deg,#6fe7d1,#43d3b8)',
-  },
-  {
-    icon: FiSearch,
-    title: 'SEO e presença local',
-    desc: 'Site otimizado, Google Meu Negócio e reputação online — para você aparecer quando o paciente procura.',
-    grad: 'linear-gradient(135deg,#0a4e94,#1f8dff)',
-  },
-  {
-    icon: FiAward,
-    title: 'Branding e posicionamento',
-    desc: 'Identidade visual, tom de voz e narrativa de marca que diferenciam sua clínica em um mercado lotado.',
-    grad: 'linear-gradient(135deg,#0a2547,#0563c2)',
   },
 ]
 
@@ -59,39 +57,47 @@ export default function Features() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-300">
-            Soluções sob medida
+            Como funciona, na prática
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Um sistema completo para sua clínica crescer
+            O que a gente faz, na prática.
           </h2>
           <p className="mt-4 text-base text-white/65 md:text-lg">
-            Não trabalhamos com receita pronta. Combinamos os pilares abaixo de
-            acordo com o momento e o objetivo da sua clínica.
+            O ProClinic atua em cinco frentes integradas. Cada uma resolve uma
+            parte do problema. Juntas, elas constroem a operação comercial
+            completa da sua clínica.
           </p>
         </motion.div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((f, i) => (
+          {pillars.map((p, i) => (
             <motion.div
-              key={f.title}
+              key={p.title}
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.55, delay: i * 0.06 }}
               whileHover={{ y: -6 }}
-              className="glass shine group relative rounded-3xl p-6"
+              className={`glass shine group relative rounded-3xl p-6 ${
+                i === pillars.length - 1 ? 'md:col-span-2 lg:col-span-1' : ''
+              }`}
             >
-              <div
-                className="grid h-12 w-12 place-items-center rounded-2xl text-white shadow-lg"
-                style={{ background: f.grad }}
-              >
-                <f.icon size={22} />
+              <div className="flex items-center justify-between">
+                <div
+                  className="grid h-12 w-12 place-items-center rounded-2xl text-white shadow-lg"
+                  style={{ background: p.grad }}
+                >
+                  <p.icon size={22} />
+                </div>
+                <span className="text-3xl font-semibold tracking-tight text-white/15">
+                  {p.n}
+                </span>
               </div>
               <h3 className="mt-5 text-lg font-semibold text-white">
-                {f.title}
+                {p.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-white/65">
-                {f.desc}
+                {p.desc}
               </p>
             </motion.div>
           ))}

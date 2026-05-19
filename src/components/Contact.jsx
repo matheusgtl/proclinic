@@ -3,9 +3,9 @@ import { Button } from 'antd'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiMail, FiMapPin, FiPhoneCall } from 'react-icons/fi'
 
-const WHATSAPP_NUMBER = '5511999990000'
+const WHATSAPP_NUMBER = '5538999771595'
 const WHATSAPP_MSG = encodeURIComponent(
-  'Olá! Vim pelo site da ProClinic e quero pedir o Diagnóstico gratuito da minha clínica.',
+  'Olá! Quero saber mais sobre o ProClinic e entender como funciona o diagnóstico para a minha clínica.',
 )
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
 
@@ -18,7 +18,8 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7 }}
-          className="glass-strong relative overflow-hidden rounded-[32px] p-8 md:p-14"
+          className="glass-strong isolate relative overflow-hidden rounded-[32px] p-8 md:p-14"
+          style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
         >
           <div
             className="pointer-events-none absolute -top-32 -right-24 h-72 w-72 rounded-full opacity-60 blur-3xl"
@@ -36,15 +37,20 @@ export default function Contact() {
           <div className="relative grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-300">
-                Vamos conversar
+                Fale com o ProClinic
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                Peça o seu Diagnóstico gratuito.
+                Pronto para ter receita previsível?
               </h2>
               <p className="mt-4 text-base text-white/70 md:text-lg">
-                Mande uma mensagem no WhatsApp. Em até 5 minutos um especialista
-                responde, entende o seu cenário e marca a sua reunião de
-                descoberta — sem compromisso.
+                O primeiro passo é um diagnóstico. Entendemos a fase atual da
+                sua clínica, identificamos os principais pontos de melhoria e
+                mostramos como a estrutura ProClinic se encaixa na sua
+                realidade.
+              </p>
+              <p className="mt-3 text-sm italic text-white/55">
+                Sem compromisso. Sem proposta genérica. Uma conversa sobre o
+                seu negócio.
               </p>
 
               <ul className="mt-8 space-y-3 text-sm text-white/80">
@@ -52,19 +58,26 @@ export default function Contact() {
                   <span className="grid h-9 w-9 place-items-center rounded-xl glass-soft text-brand-300">
                     <FiPhoneCall />
                   </span>
-                  +55 (11) 99999-0000
+                  +55 38 99977-1595
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="grid h-9 w-9 place-items-center rounded-xl glass-soft text-brand-300">
                     <FiMail />
                   </span>
-                  ola@proclinic.app
+                  contato@somosproclinic.com.br
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="grid h-9 w-9 place-items-center rounded-xl glass-soft text-brand-300">
                     <FiMapPin />
                   </span>
-                  Av. Paulista, 1000 · São Paulo · SP
+                  <a
+                    href="https://www.instagram.com/proclinic_oficial/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="transition hover:text-white"
+                  >
+                    Instagram · @proclinic_oficial
+                  </a>
                 </li>
               </ul>
             </div>
@@ -87,7 +100,7 @@ export default function Contact() {
                 Atendimento humano, segunda a sábado, das 8h às 22h.
               </p>
               <p className="text-sm font-medium text-white">
-                Quero meu Diagnóstico
+                Quero fazer o diagnóstico
               </p>
 
               <Button
