@@ -170,6 +170,80 @@ export default function Founder() {
             </div>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="glass-strong isolate relative mt-6 overflow-hidden rounded-[28px] p-7 md:p-9"
+          style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+        >
+          <div
+            className="pointer-events-none absolute -bottom-24 -left-16 h-60 w-60 rounded-full opacity-50 blur-3xl"
+            style={{
+              background: 'radial-gradient(circle,#43d3b8,transparent 65%)',
+            }}
+          />
+
+          <div className="relative grid items-start gap-6 sm:grid-cols-[minmax(180px,240px)_1fr]">
+            <div
+              className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl"
+              style={{
+                boxShadow:
+                  '0 22px 50px -16px rgba(67,211,184,0.45), inset 0 0 0 1px rgba(255,255,255,0.18)',
+              }}
+            >
+              <img
+                src="/daniela-monteiro.jpg"
+                alt="Daniela Monteiro, cirurgiã-dentista e SDR da ProClinic"
+                className="h-full w-full object-cover"
+              />
+              <div
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3"
+                style={{
+                  background:
+                    'linear-gradient(180deg, transparent 0%, rgba(4,18,42,0.6) 100%)',
+                }}
+              />
+            </div>
+
+            <div>
+              <p className="text-[11px] uppercase tracking-widest text-white/45">
+                Time ProClinic
+              </p>
+              <p className="mt-3 text-2xl font-semibold leading-tight text-white">
+                Daniela Monteiro{' '}
+                <span className="text-white/50">— A Fada da Boca</span>
+              </p>
+              <p className="mt-1 text-sm text-white/60">
+                Cirurgiã-dentista · SDR & SLA da ProClinic
+              </p>
+
+              <p className="mt-5 text-[15px] leading-relaxed text-white/75">
+                Daniela é cirurgiã-dentista com passagem por PSF, clínicas
+                franqueadas e consultório próprio em Montes Claros, onde atua
+                com <span className="text-white">harmonização orofacial e
+                estética dental</span>.
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-white/75">
+                Ao abrir seu consultório, contratou empresas de marketing que
+                prometiam atrair pacientes. Nenhuma entregou. O problema não era
+                falta de investimento — era falta de estrutura comercial real
+                por trás das promessas. Quando conheceu a ProClinic, entendeu a
+                diferença: não era mais uma empresa de tráfego, e sim um
+                programa de operação comercial completo, com método,
+                acompanhamento e responsabilidade sobre resultado.
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-white/75">
+                Decidiu fazer parte. Hoje atua como{' '}
+                <span className="text-white">SDR e SLA da ProClinic</span>,
+                conectando dentistas e médicos ao programa e acompanhando a
+                entrada de novos clientes.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
