@@ -3,7 +3,7 @@ import { Button } from 'antd'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiMail, FiMapPin, FiPhoneCall } from 'react-icons/fi'
 
-const WHATSAPP_NUMBER = '5538999771595'
+const WHATSAPP_NUMBER = '553832209455'
 const WHATSAPP_MSG = encodeURIComponent(
   'Olá! Quero saber mais sobre o ProClinic e entender como funciona o diagnóstico para a minha clínica.',
 )
@@ -58,7 +58,7 @@ export default function Contact() {
                   <span className="grid h-9 w-9 place-items-center rounded-xl glass-soft text-brand-300">
                     <FiPhoneCall />
                   </span>
-                  +55 38 99977-1595
+                  +55 (38) 3220-9455
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="grid h-9 w-9 place-items-center rounded-xl glass-soft text-brand-300">

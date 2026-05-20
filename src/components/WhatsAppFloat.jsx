@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 
-const WHATSAPP_NUMBER = '5538999771595'
+const WHATSAPP_NUMBER = '553832209455'
 const WHATSAPP_MSG = encodeURIComponent(
   'Olá! Quero saber mais sobre o ProClinic e entender como funciona o diagnóstico para a minha clínica.',
 )
