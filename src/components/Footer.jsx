@@ -48,7 +48,7 @@ export default function Footer() {
               <p className="mt-4 max-w-sm text-sm text-white/60">
                 Estrutura comercial completa para médicos e dentistas.
                 Implementação, não consultoria. Receita previsível com método,
-                IA, CRM e métricas — implementadas ao lado da sua equipe.
+                IA, CRM e métricas, implementadas ao lado da sua equipe.
               </p>
             </div>
 

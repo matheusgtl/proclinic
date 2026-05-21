@@ -48,7 +48,7 @@ export default function Founder() {
             <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-white/75 md:text-base">
               <p>
                 Um casal que Huilter conhecia há anos pediu ajuda: trabalhavam
-                muito, atendiam bem, tinham estrutura — mas a agenda instável
+                muito, atendiam bem, tinham estrutura, mas a agenda instável
                 tornava impossível planejar qualquer coisa.
               </p>
               <p>
@@ -59,8 +59,8 @@ export default function Founder() {
                 memória da recepcionista, indicação passiva como único canal.
               </p>
               <p>
-                A implementação levou alguns meses. O resultado foi uma virada
-                — da instabilidade para um fluxo previsível de novos pacientes,
+                A implementação levou alguns meses. O resultado foi uma virada:
+                da instabilidade para um fluxo previsível de novos pacientes,
                 com agenda controlada e receita que dava para planejar.
               </p>
               <p>
@@ -77,7 +77,7 @@ export default function Founder() {
               </p>
               <p className="mt-2 text-[15px] leading-relaxed text-white/85">
                 Transformar a operação comercial de médicos e dentistas em uma
-                estrutura previsível, escalável e independente de agências —
+                estrutura previsível, escalável e independente de agências,
                 implementando ao lado da equipe, não entregando um plano para
                 executar sozinho.
               </p>
@@ -138,14 +138,14 @@ export default function Founder() {
                     Empreende em serviços desde os 16 anos. Nos últimos 10
                     anos, construiu canais de conteúdo digital com mais de{' '}
                     <span className="text-white">10 milhões de visualizações
-                    mensais</span> — o que o tornou especialista não só em
+                    mensais</span>, o que o tornou especialista não só em
                     audiência, mas em como converter atenção em receita.
                   </p>
                   <p className="mt-3 text-[15px] leading-relaxed text-white/75">
                     Ao longo da trajetória, impactou{' '}
                     <span className="text-white">mais de 200 negócios</span>{' '}
                     estruturando captação, atendimento, conversão e
-                    recorrência — aumentando o LTV e reduzindo o CAC de
+                    recorrência, aumentando o LTV e reduzindo o CAC de
                     clínicas, consultórios e empresas de serviços.
                   </p>
                 </div>
@@ -214,7 +214,7 @@ export default function Founder() {
               </p>
               <p className="mt-3 text-2xl font-semibold leading-tight text-white">
                 Daniela Monteiro{' '}
-                <span className="text-white/50">— A Fada da Boca</span>
+                <span className="text-white/50">· A Fada da Boca</span>
               </p>
               <p className="mt-1 text-sm text-white/60">
                 Cirurgiã-dentista · SDR & SLA da ProClinic
@@ -229,7 +229,7 @@ export default function Founder() {
               <p className="mt-3 text-[15px] leading-relaxed text-white/75">
                 Ao abrir seu consultório, contratou empresas de marketing que
                 prometiam atrair pacientes. Nenhuma entregou. O problema não era
-                falta de investimento — era falta de estrutura comercial real
+                falta de investimento, e sim falta de estrutura comercial real
                 por trás das promessas. Quando conheceu a ProClinic, entendeu a
                 diferença: não era mais uma empresa de tráfego, e sim um
                 programa de operação comercial completo, com método,

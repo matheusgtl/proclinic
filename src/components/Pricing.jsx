@@ -6,7 +6,7 @@ const included = [
   'Diagnóstico comercial completo da clínica ou consultório',
   'Definição de posicionamento e paciente ideal',
   'Plano de captação (orgânico + pago, conforme o perfil)',
-  'Produção de conteúdo para redes sociais — calendário e execução',
+  'Produção de conteúdo para redes sociais (calendário e execução)',
   'Implementação do assistente de agendamento com IA (WhatsApp)',
   'Configuração e operação do CRM',
   'Fluxos de follow-up e reativação automatizados',
@@ -40,7 +40,7 @@ export default function Pricing() {
           </h2>
           <p className="mt-4 text-base text-white/65 md:text-lg">
             Implementação, não consultoria. Trabalhamos com você, dentro da sua
-            operação — não entregamos um plano para você executar sozinho.
+            operação, e não entregamos um plano para você executar sozinho.
           </p>
         </motion.div>
 
@@ -59,14 +59,15 @@ export default function Pricing() {
                 boxShadow: '0 8px 20px -6px rgba(31,141,255,0.55)',
               }}
             >
-              Operação comercial completa
+              ProClinic Predict · operação completa
             </span>
 
             <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
-              5 frentes integradas, implementadas ao lado da sua equipe.
+              As 5 frentes do ProClinic Predict, implementadas ao lado da sua
+              equipe.
             </h3>
             <p className="mt-4 text-sm text-white/65">
-              Posicionamento, captação, atendimento com IA, CRM e métricas —
+              Posicionamento, captação, atendimento com IA, CRM e métricas,
               juntos. Funciona integrado ou não funciona.
             </p>
 
@@ -101,7 +102,7 @@ export default function Pricing() {
               <p className="mt-3 text-[15px] leading-relaxed text-white/80">
                 Cada cliente passa por um diagnóstico de fase antes de qualquer
                 implementação. A partir dele, definimos prioridades e
-                cronograma. O acompanhamento é contínuo — reuniões semanais,
+                cronograma. O acompanhamento é contínuo: reuniões semanais,
                 revisão de métricas e ajuste de rota sempre que necessário.
               </p>
             </div>

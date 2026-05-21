@@ -80,9 +80,9 @@ export default function Testimonials() {
             <span className="font-semibold text-white">Como é a operação na prática:</span>{' '}
             cada cliente ProClinic passa por um diagnóstico de fase antes de
             qualquer implementação. A partir desse diagnóstico, definimos as
-            prioridades e o cronograma de execução. O acompanhamento é contínuo
-            — reuniões semanais, revisão de métricas e ajuste de rota sempre
-            que necessário.
+            prioridades e o cronograma de execução. O acompanhamento é
+            contínuo: reuniões semanais, revisão de métricas e ajuste de rota
+            sempre que necessário.
           </p>
         </motion.div>
       </div>

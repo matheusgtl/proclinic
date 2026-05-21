@@ -15,7 +15,7 @@ const notFits = [
   'Você está abrindo o consultório agora e ainda não tem operação estabelecida',
   'Você quer só uma agência para gerenciar redes sociais',
   'Você busca resultados em 30 dias sem envolver a equipe na implementação',
-  'Você não está disposto a fazer parte do processo — o ProClinic trabalha com você, não para você',
+  'Você não está disposto a fazer parte do processo: o ProClinic trabalha com você, não para você',
 ]
 
 export default function HowItWorks() {

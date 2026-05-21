@@ -20,11 +20,11 @@ export default function Hero() {
           >
             <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium text-white/85">
               <FiTrendingUp className="text-mint-400" />
-              Estrutura comercial completa · Médicos e Dentistas
+              ProClinic Predict · Médicos e Dentistas
             </span>
 
             <h1 className="mt-5 text-[44px] font-semibold leading-[1.05] tracking-tight text-white md:text-6xl">
-              Receita{' '}
+              Sua clínica não precisa de mais seguidores. Precisa parar de{' '}
               <span
                 className="bg-clip-text text-transparent"
                 style={{
@@ -32,18 +32,17 @@ export default function Hero() {
                     'linear-gradient(120deg, #6fe7d1 0%, #4ea7ff 60%, #1f8dff 100%)',
                 }}
               >
-                previsível
+                depender da sorte.
               </span>
-              {' '}para médicos e dentistas.
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-              Você atende bem. Mas não tem controle sobre quantos pacientes vão
-              aparecer no próximo mês. O ProClinic estrutura a operação
-              comercial completa da sua clínica —{' '}
-              <span className="font-medium text-white">captação,
-              atendimento, conversão e recorrência</span> — para transformar
-              esforço em resultado previsível.
+              O problema da maioria das clínicas não é falta de pacientes, e
+              sim falta de processo comercial. O{' '}
+              <span className="font-medium text-white">ProClinic Predict</span>{' '}
+              implanta um sistema de captação, conversão e recorrência que
+              transforma esforço em{' '}
+              <span className="font-medium text-white">receita previsível</span>.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -65,11 +64,11 @@ export default function Hero() {
                   boxShadow: '0 16px 40px -12px rgba(31,141,255,0.55)',
                 }}
               >
-                Quero estruturar minha clínica
+                Quero previsibilidade na minha clínica
               </Button>
               <Button
                 size="large"
-                href="#how"
+                href="#features"
                 style={{
                   height: 52,
                   paddingInline: 22,
@@ -81,7 +80,7 @@ export default function Hero() {
                   backdropFilter: 'blur(14px)',
                 }}
               >
-                Saiba como funciona
+                Conhecer o ProClinic Predict
               </Button>
             </div>
 

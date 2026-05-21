@@ -19,7 +19,7 @@ const pillars = [
     n: '02',
     icon: FiTarget,
     title: 'Captação e tráfego',
-    desc: 'Estruturamos os canais de aquisição — orgânico e pago — para atrair o paciente certo, no momento certo, com a mensagem certa. Instagram, Google, indicação estruturada e outros canais conforme o perfil da clínica.',
+    desc: 'Estruturamos os canais de aquisição (orgânico e pago) para atrair o paciente certo, no momento certo, com a mensagem certa. Instagram, Google, indicação estruturada e outros canais conforme o perfil da clínica.',
     grad: 'linear-gradient(135deg,#1f8dff,#0563c2)',
   },
   {
@@ -33,7 +33,7 @@ const pillars = [
     n: '04',
     icon: FiRepeat,
     title: 'CRM, follow-up e recorrência',
-    desc: 'Cada paciente tem um caminho mapeado no CRM — do primeiro contato à manutenção. O follow-up é automatizado. O retorno é previsível. O LTV aumenta sem esforço manual da equipe.',
+    desc: 'Cada paciente tem um caminho mapeado no CRM, do primeiro contato à manutenção. O follow-up é automatizado. O retorno é previsível. O LTV aumenta sem esforço manual da equipe.',
     grad: 'linear-gradient(135deg,#43d3b8,#1fb89a)',
   },
   {
@@ -57,15 +57,17 @@ export default function Features() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mint-300">
-            Como funciona, na prática
+            O método · ProClinic Predict
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            O que a gente faz, na prática.
+            ProClinic Predict: o sistema que gera previsibilidade.
           </h2>
           <p className="mt-4 text-base text-white/65 md:text-lg">
-            O ProClinic atua em cinco frentes integradas. Cada uma resolve uma
-            parte do problema. Juntas, elas constroem a operação comercial
-            completa da sua clínica.
+            Agência comum entrega tráfego e relatório, e deixa a execução com
+            você. O ProClinic Predict implanta, ao lado da sua equipe, as cinco
+            frentes que transformam a clínica em uma operação comercial
+            previsível. Cada uma resolve uma parte do problema. Juntas, elas
+            tiram a sua receita das mãos da sorte.
           </p>
         </motion.div>
 

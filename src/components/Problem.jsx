@@ -46,6 +46,19 @@ export default function Problem() {
               <span className="font-semibold text-white">Esse não é um
               problema de qualidade. É um problema de estrutura.</span>
             </p>
+
+            <div
+              className="mt-7 rounded-2xl border-l-2 p-5"
+              style={{
+                borderColor: '#43d3b8',
+                background: 'rgba(67,211,184,0.08)',
+              }}
+            >
+              <p className="text-lg font-semibold leading-snug text-white md:text-xl">
+                "O problema da maioria das clínicas não é falta de pacientes.
+                É falta de processo comercial."
+              </p>
+            </div>
           </motion.div>
 
           <motion.ul
@@ -104,7 +117,7 @@ export default function Problem() {
                 O ProClinic não entrega um relatório de diagnóstico nem um plano
                 de 90 dias para você executar sozinho. Entramos na operação,
                 implementamos ao lado da sua equipe e acompanhamos os
-                resultados. O que fica é estrutura funcionando — não dependência
+                resultados. O que fica é estrutura funcionando, não dependência
                 de uma agência.
               </p>
             </div>
