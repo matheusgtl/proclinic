@@ -96,9 +96,6 @@ export default function Contact() {
                 <FaWhatsapp size={48} />
               </motion.div>
 
-              <p className="text-sm text-white/65">
-                Atendimento humano, segunda a sábado, das 8h às 22h.
-              </p>
               <p className="text-sm font-medium text-white">
                 Quero fazer o diagnóstico
               </p>
@@ -125,10 +122,6 @@ export default function Contact() {
               >
                 Falar pelo WhatsApp
               </Button>
-
-              <p className="text-[11px] uppercase tracking-widest text-white/45">
-                Resposta em até 5 minutos
-              </p>
             </div>
           </div>
         </motion.div>

@@ -24,7 +24,6 @@ const cols = [
     items: [
       { label: 'WhatsApp', href: '#contact' },
       { label: 'Instagram · @proclinic_oficial', href: INSTAGRAM_URL, external: true },
-      { label: 'Política de Privacidade', href: '#' },
     ],
   },
 ]
