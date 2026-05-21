@@ -24,7 +24,7 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-5 text-[44px] font-semibold leading-[1.05] tracking-tight text-white md:text-6xl">
-              Sua clínica não precisa de mais seguidores. Precisa parar de{' '}
+              Sua clínica quer faturar mais e o marketing{' '}
               <span
                 className="bg-clip-text text-transparent"
                 style={{
@@ -32,7 +32,7 @@ export default function Hero() {
                     'linear-gradient(120deg, #6fe7d1 0%, #4ea7ff 60%, #1f8dff 100%)',
                 }}
               >
-                depender da sorte.
+                ainda não funcionou?
               </span>
             </h1>
 
